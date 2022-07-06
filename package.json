@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "NODE_ENV=development webpack serve --config webpack/local.js",
+    "start": "NODE_ENV=DEVELOPMENT webpack serve --config webpack/local.js",
     "lint:fix": "npm run lint -- --fix",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "package": "NODE_ENV=PRODUCTION webpack --config webpack/production.js",
@@ -73,5 +73,9 @@
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
+  },
+  "engines": {
+    "npm": ">=8.11.0",
+    "node": ">=16.15.0"
   }
 }
